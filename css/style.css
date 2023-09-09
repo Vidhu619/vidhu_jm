@@ -3299,8 +3299,32 @@ h6 {
     .footer_area .footer_bottom a {
       color: #854fee; }
 
-/* End Footer Area css
-============================================================================================ */
-/*---------------------------------------------------- */
+/* Text style */
+.animated-text {
+  display: inline-block;
+  overflow: hidden; /* Hide overflow text */
+  border-right: px solid #1a1919; /* Simulate cursor with 2px width */
+  white-space: nowrap; /* Prevent line break */
+  margin: 0;
+  padding: 0;
+  animation: typing 3s steps(70) 1s 1 normal both,
+             blink-caret 0.75s steps(1) infinite;
+}
 
-/*# sourceMappingURL=style.css.map */
+/* Typing animation keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Keyframes for animating the dots */
+
+
+/* Apply the dots animation class */
+.dots-animating {
+  animation: dots-animation 6s steps(1) infinite;
+}

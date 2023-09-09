@@ -306,4 +306,24 @@
 			]
 		});
 	}
+	document.addEventListener('DOMContentLoaded', function () {
+		const introTextElement = document.getElementById('introText');
+		const dotsElement = document.getElementById('dots');
+		const introCursorElement = introTextElement.querySelector('#cursor');
+	  
+		// Add a class to start the animation for the intro text
+		introTextElement.classList.add('typing');
+	  
+		// Listen for the animationend event on the intro text
+		introTextElement.addEventListener('animationend', function () {
+		  // After "I am Vidhu" is fully typed, add a class to start the dots animation
+		  dotsElement.classList.add('dots-animating');
+		  
+		  // Remove the cursor for the intro text
+		  introCursorElement.style.display = 'none';
+		});
+	  });
+	  
+	  
 })(jQuery);
+
