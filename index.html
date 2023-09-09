@@ -2,6 +2,34 @@
 <html lang="en">
 
 <head>
+    <style>
+        .email-text {
+            color: blue;
+            font-size: 18px;
+            margin-right: 295px; 
+            margin-top: 0px; /* Adjust the right margin to move "Email me at" to the left */
+          }
+          
+          .fa.fa-envelope {
+            font-size: 70px !important;
+            color: black;
+          }
+          
+          /* Add a custom class to control the layout */
+          .contact-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          }
+          
+          /* Add some margin to separate the sections */
+          .email-now {
+            margin-left: 100px; /* Adjust as needed */
+          }
+          
+          
+      </style>
+      
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -120,25 +148,37 @@
 						<!-- Content for brand area (if any) goes here -->
 					</div>
 				</div>
-			</div>
-			<div class="">
-				<div class="client-info">
-					<div class="d-flex mb-50">
-						<span class="lage">0</span>
-						<span class="smll">Years Working Experience </span>
-					</div>
-					<div class="call-now d-flex">
-						<div>
-							<span class="fa fa-phone"></span>
-						</div>
-						<div class="ml-15">
-							<p>call me now</p>
-							<h3>7306777538</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+			</div><div class="">
+                <div class="client-info">
+                  <div class="d-flex mb-50">
+                    <span class="lage">0</span>
+                    <span class="smll">Years Working Experience</span>
+                  </div>
+                  <!-- Combine the "Call me now" and "Email me at" sections -->
+                  <div class="contact-info ml-15">
+                    <div class="call-now d-flex">
+                      <div>
+                        <span class="fa fa-phone"></span>
+                      </div>
+                      <div class="ml-15">
+                        <p>Call me now</p>
+                        <h3>7306777538</h3>
+                      </div>
+                    </div>
+                    <div class="email-now d-flex">
+                      <div>
+                        <span class="fa fa-envelope"></span>
+                      </div>
+                      <div class="ml-15">
+                        <p class="email-text">email me at</p>
+                        <h3>vidhukrishnan619849@email.com</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
 	</section>
 	
 	<!-- Skills Area -->
